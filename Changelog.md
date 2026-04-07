@@ -4,6 +4,31 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2026.04.07.225221
+
+#### Core changes
+- [Add lockfile and pinned extras](https://github.com/yt-dlp/yt-dlp/commit/5f6a214616f6fc3831a2535bcd1f837e90549d10) ([#16421](https://github.com/yt-dlp/yt-dlp/issues/16421)) by [bashonly](https://github.com/bashonly), [Grub4K](https://github.com/Grub4K) (With fixes in [88c8a68](https://github.com/yt-dlp/yt-dlp/commit/88c8a68eb52268111e224293e9a6519944971096) by [bashonly](https://github.com/bashonly))
+- [Fix `default` extra for `ios` platforms](https://github.com/yt-dlp/yt-dlp/commit/a5aae189452d11ca731a4fb409d0136c668bd7c6) ([#16376](https://github.com/yt-dlp/yt-dlp/issues/16376)) by [bashonly](https://github.com/bashonly)
+- **update**: [Bump GitHub REST API version to `2026-03-10`](https://github.com/yt-dlp/yt-dlp/commit/fe5e67c0545a4aac9d404b220c21ba53d1048353) ([#16435](https://github.com/yt-dlp/yt-dlp/issues/16435)) by [bashonly](https://github.com/bashonly)
+
+#### Extractor changes
+- `_resolve_nuxt_array`: [Handle Pinia `skipHydrate`](https://github.com/yt-dlp/yt-dlp/commit/8001ff4349fa4eaafd0f88fd8abdf8756090596d) ([#16447](https://github.com/yt-dlp/yt-dlp/issues/16447)) by [doe1080](https://github.com/doe1080)
+- **bandcamp**: weekly: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/2d7b278666bfbf12cf287072498dd275c946b968) ([#16373](https://github.com/yt-dlp/yt-dlp/issues/16373)) by [bashonly](https://github.com/bashonly)
+- **rtp**: [Support multi-part episodes and `--no-playlist`](https://github.com/yt-dlp/yt-dlp/commit/f01e1a1ced581c13f28c7da45eb6396cb9fff6e4) ([#16299](https://github.com/yt-dlp/yt-dlp/issues/16299)) by [bashonly](https://github.com/bashonly)
+- **youtube**: [Fix outdated quickjs-ng warning](https://github.com/yt-dlp/yt-dlp/commit/04b2261cbf1aafb964320062dbb33e74ec613291) ([#16437](https://github.com/yt-dlp/yt-dlp/issues/16437)) by [bashonly](https://github.com/bashonly)
+
+#### Networking changes
+- **Request Handler**
+    - curl_cffi
+        - [Fix supported impersonate targets](https://github.com/yt-dlp/yt-dlp/commit/565dcfec4e5c035b5544de4a369f654b8a60e9e6) ([#16440](https://github.com/yt-dlp/yt-dlp/issues/16440)) by [bashonly](https://github.com/bashonly)
+        - [Support `curl_cffi` 0.15.x](https://github.com/yt-dlp/yt-dlp/commit/0f45ecc920f31c3c5704c62bad8da2e2844ff9bc) ([#16429](https://github.com/yt-dlp/yt-dlp/issues/16429)) by [bashonly](https://github.com/bashonly)
+
+#### Misc. changes
+- **build**: [Harden build/release workflows](https://github.com/yt-dlp/yt-dlp/commit/87eaf886f5a1fed00639baf3677ac76281cd98f9) ([#16358](https://github.com/yt-dlp/yt-dlp/issues/16358)) by [bashonly](https://github.com/bashonly), [Grub4K](https://github.com/Grub4K) (With fixes in [cdc465a](https://github.com/yt-dlp/yt-dlp/commit/cdc465a34674d15edf52b656457f6006b9e03edf) by [bashonly](https://github.com/bashonly))
+- **ci**: [Update wiki via this repository](https://github.com/yt-dlp/yt-dlp/commit/40ffb79d499e6b37682fddbe6affec20186a3d86) ([#16446](https://github.com/yt-dlp/yt-dlp/issues/16446)) by [bashonly](https://github.com/bashonly) (With fixes in [9f0fc9a](https://github.com/yt-dlp/yt-dlp/commit/9f0fc9a6333b912c83b177542cd3a3cc1c6ff326))
+- **devscripts**: [Handle `ejs` updates for requirements files](https://github.com/yt-dlp/yt-dlp/commit/fcccbc68496d8af1b7c24cd5e45e83af4ca76f18) ([#16374](https://github.com/yt-dlp/yt-dlp/issues/16374)) by [bashonly](https://github.com/bashonly), [Grub4K](https://github.com/Grub4K)
+- **test**: [Add default and curl-cffi extras to hatch-test env](https://github.com/yt-dlp/yt-dlp/commit/f14d2f2d548a45fef221aa3821e5a1bf450d5c0b) ([#16397](https://github.com/yt-dlp/yt-dlp/issues/16397)) by [JSubelj](https://github.com/JSubelj)
+
 ### 2026.03.17
 
 #### Extractor changes
